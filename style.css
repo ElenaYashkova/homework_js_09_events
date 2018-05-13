@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #358FAD;
+}
+.wrapper > *{
+    width: 30%;
+    height: 100vh;
+    overflow: auto;
+}
+.addPhone{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.addPhone .form{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 80vh;
+}
+.addPhone > * {
+    margin: 15px;
+    background-color: #E8D537;
+    padding: 15px;
+}
+input, textarea{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #666666;
+    padding: 5px;
+}
+.addPhoneBtn {
+    font-size: inherit;
+}
+.showPhones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.showPhones .phone{
+    width: 170px;
+    height: 200px;
+    background-color: #E8D537;
+    margin-top: 20px;
+}
+.showPhones .phone .img{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    background-position: center;
+    background-size: cover;
+}
+.showDetailsBtn{
+    float: right;
+    background-color: #358FAD;
+    font-size: inherit;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.showDetails .phoneDetails{
+    margin: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.showDetails .phoneDetails .img {
+    width: 50%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.showDetails .phoneDetails .details{
+    background-color: #E8D537;
+    width: 50%;
+    padding:0 10px;
+}
+.showDetails .description{
+    margin: 20px;
+    background-color: #E8D537;
+    padding: 10px;
+}
